@@ -32,7 +32,7 @@ def responseCheck(usersChoice, computersChoice):
         print("SCISSORS(you) vs PAPER(computer)")
         print("SCISSORS - You win!")
     else:
-        print("Invalid Input!")
+        # print("Invalid Input!")
         return False
     
 
@@ -52,6 +52,7 @@ def gamePlay():
         usersChoice = int(input("Enter your choice (1|2|3): "))
         computersDecision = computersChoice(usersChoice)
         responseCheck(usersChoice, computersDecision)
+        print()
 
         playResponse = True
 
